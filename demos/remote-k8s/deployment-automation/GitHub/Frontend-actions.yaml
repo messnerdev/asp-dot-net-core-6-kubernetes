@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       imageRepository: 'frontend'
-      containerRegistry: 'psgloboticket.azurecr.io'
+      containerRegistry: 'psgloboticketjake.azurecr.io'
       dockerfilePath: 'frontend/Dockerfile'
       deploymentFile: 'frontend.yaml'
       namespace: 'globoticket'
