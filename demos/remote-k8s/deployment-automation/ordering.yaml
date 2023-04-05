@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
       - name: ordering
-        image: psgloboticket.azurecr.io/ordering:#{Build.BuildId}#
+        image: psgloboticketjake.azurecr.io/ordering:#{Build.BuildId}#
         resources:
           requests:
             memory: "500Mi"
@@ -48,5 +48,3 @@ spec:
         ports:
         - containerPort: 80
         imagePullPolicy: Always
-      imagePullSecrets:
-        - name: acr-secret
