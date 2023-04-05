@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       imageRepository: 'catalog'
-      containerRegistry: 'psgloboticket.azurecr.io'
+      containerRegistry: 'psgloboticketjake.azurecr.io'
       dockerfilePath: 'catalog/Dockerfile'
       deploymentFile: 'catalog.yaml'
       namespace: 'globoticket'
