@@ -41,7 +41,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: psgloboticket.azurecr.io/frontend:#{Build.BuildId}#
+        image: psgloboticketjake.azurecr.io/frontend:#{Build.BuildId}#
         resources:
           requests:
             memory: "500Mi"
@@ -75,5 +75,3 @@ spec:
           periodSeconds: 10
           timeoutSeconds: 10
           failureThreshold: 3
-      imagePullSecrets:
-        - name: acr-secret
