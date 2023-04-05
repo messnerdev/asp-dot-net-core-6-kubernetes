@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
       - name: catalog
-        image: psgloboticket.azurecr.io/catalog:#{Build.BuildId}#
+        image: psgloboticketjake.azurecr.io/catalog:#{Build.BuildId}#
         resources:
           requests:
             memory: "500Mi"
@@ -53,5 +53,3 @@ spec:
         ports:
         - containerPort: 80
         imagePullPolicy: Always
-      imagePullSecrets:
-        - name: acr-secret
